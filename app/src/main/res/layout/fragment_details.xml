@@ -1,0 +1,142 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              tools:context="boulier.remi.whiskers.DetailsFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/details_img_big"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:scaleType="centerCrop"
+            android:alpha="0.25"
+            android:src="@mipmap/ic_launcher"/>
+
+        <ImageView
+            android:id="@+id/details_img"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:src="@mipmap/ic_launcher"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/details_breed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="24dp"
+        android:text="@string/dummy_txt"
+        android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+    <LinearLayout
+        style="@style/DetailLinearLayout">
+
+        <TextView
+            style="@style/Label"
+            android:text="@string/legs"/>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:id="@+id/details_legs"
+            style="@style/DetailTextView"
+            android:text="@string/dummy_txt"/>
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/DetailLinearLayout">
+
+        <TextView
+            style="@style/Label"
+            android:text="@string/size"/>
+
+        <View style="@style/EmptyView"/>
+
+        <TextView
+            android:id="@+id/details_size"
+            style="@style/DetailTextView"
+            android:text="@string/dummy_txt"/>
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/DetailLinearLayout">
+
+        <TextView
+            style="@style/Label"
+            android:text="@string/whiskers"/>
+
+        <View style="@style/EmptyView"/>
+
+        <TextView
+            android:id="@+id/details_whiskers"
+            style="@style/DetailTextView"
+            android:text="@string/dummy_txt"/>
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/DetailLinearLayout">
+
+        <TextView
+            android:id="@+id/details_label_preferred_food"
+            style="@style/Label"
+            android:text="@string/preferred_food"/>
+
+        <View style="@style/EmptyView"/>
+
+        <TextView
+            android:id="@+id/details_preferred_food"
+            style="@style/DetailTextView"
+            android:text="@string/dummy_txt"/>
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/DetailLinearLayout">
+
+        <TextView
+            android:id="@+id/details_label_package"
+            style="@style/Label"
+            android:text="@string/food_package"/>
+
+        <View style="@style/EmptyView"/>
+
+        <TextView
+            android:id="@+id/details_package"
+            style="@style/DetailTextView"
+            android:text="@string/dummy_txt"/>
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/DetailLinearLayout">
+
+        <TextView
+            style="@style/Label"
+            android:text="@string/color"/>
+
+        <View style="@style/EmptyView"/>
+
+        <ImageView
+            android:id="@+id/details_color_img"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_toRightOf="@+id/details_color_txt"
+            android:background="#ff0000"/>
+
+        <TextView
+            android:id="@+id/details_color_n_a"
+            style="@style/DetailTextView"
+            android:text="@string/n_a"
+            android:visibility="gone"/>
+    </LinearLayout>
+
+
+</LinearLayout>
